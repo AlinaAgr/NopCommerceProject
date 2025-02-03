@@ -41,9 +41,9 @@ public class BaseTest {
             String errorMessage = result.getThrowable().getMessage();
             logFailWithScreenshot(errorMessage, driver);
         }
-//        if (driver != null){
-//            driver.quit();
-//        }
+        if (driver != null){
+            driver.quit();
+        }
         finishTest(testName);
     }
 
